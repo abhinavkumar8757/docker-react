@@ -30,4 +30,4 @@ jobs:
 
       # Step 4: Run Tests inside Docker container
       - name: Run tests
-        run: docker run -e CI=true akuma384/docker-react npm run test
+        run: docker run -e CI=true akuma384/docker-react npm run test -- --coverage
